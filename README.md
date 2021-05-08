@@ -87,3 +87,23 @@ kubectl proxy --port=8080
 ```
 
 Tekton UI should be available at http://localhost:8080/api/v1/namespaces/tekton-pipelines/services/tekton-dashboard:http/proxy/
+
+## Personal Notes
+
+* Tekton needs cluster level access
+* Deployment was fast
+* Low learning curve
+* Pod is deployed faster than jenkins -> kubernetes
+* Pipeline resource provides re-usable task workflow
+* Lack of plugins makes you depend on static task definition
+* A upstream catalog of tasks and pipelines is provided
+* UI looks ok
+* Task managemet is easier since it is all kubernetes declarative yaml files
+* A cli is provided for convinience (there nothing that can't be done without it)
+* I couldn't find a way to run periodically tasks (every 1 hour or so)
+  * A workaround would to have a kubernetes pod job to executer a tekton trigger
+* Triggers look very interesting, you can even expose those for external apps
+
+## License
+
+Consider it public domain.
