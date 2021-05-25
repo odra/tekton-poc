@@ -1,5 +1,7 @@
 # Tekton POC
 
+Requires kubernetes >= 1.18.x
+
 NOTE: work done on fedora 33
 
 ## Installation
